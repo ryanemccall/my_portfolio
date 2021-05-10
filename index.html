@@ -7,6 +7,7 @@
     <title>Ryan Modrall Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,7 +25,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -39,11 +40,9 @@
                 <h5 id="about-me" class="card-title">About Me</h5>
                 <p class="card-text">Hi, my name is Ryan Modrall, and I am Jr. Web Developer studying with Eleven Fifty Academy. I am also in pursuit of an Informatics degree through Ivy Tech where I will graduate this Fall. 
 
-                    I believe in work that makes a difference in people’s lives. Through my 7 years in the healthcare industry from claims to facility enrollment to provider enrollment, I have learned that work that changes lives comes in many forms. I love web development as it makes me feel like an artist who can use their skills to help users of my sites gain knowledge, have some fun, or whatever the task may be. 
+                    I believe in work that makes a difference in people’s lives. Through my 7 years in the healthcare industry from claims to facility enrollment to provider enrollment, I have learned that work that changes lives comes in many forms. Web Development makes me feel like an artist who can use their skills to help users of my sites gain knowledge, have some fun, or whatever the task may be. 
                     
-                    If you would like to learn more about my qualifications and past work please click below for a copy of my resume. 
                      </p>
-                     <button type="submit" onclick="window.open('file.doc')">Resume</button>
                      <img id="barbershop" src="./assests/frontier.jpg" class="card-img-top" alt="barbershop shirt">
               </div>
             </div>
@@ -57,9 +56,9 @@
             <div id="card3" class="card">
               <div class="card-body">
                 <h5 id="hobbies" class="card-title">Hobbies</h5>
-                <p class="card-text">Outside of work I love to cook. I enjoy spending time with my wife and friends. I love to travel, and I am what is known as a barbershop quartet singer. I have been singing barbershop for 12 years now. So here is a video of me performing at the Barbershop International Competition in Orlando, FL in 2018 with my quartet, The Simple Life!</p>
+                <p class="card-text">Outside of work I love to cook. I enjoy spending time with my wife and friends. I love to travel, and I am what is known as a barbershop quartet singer. I have been singing barbershop for 12 years now. So please enjoy a video of me performing at the Barbershop International Competition in Orlando, FL in 2018 with my quartet, The Simple Life!</p>
                 <br>
-                <iframe width="480" height="315" src="https://www.youtube.com/embed/-Uzc-OItA20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="480" height="315" src="https://www.youtube.com/embed/-Uzc-OItA20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -112,22 +111,166 @@
               </a>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <a class="project-box" href="https://superhero-api-8c05d.web.app/" target="blank">
-                <img class="img-fluid" src="./assests/API1.png" alt="Superhero API">
+                <a class="project-box" href="https://ryanemccall.github.io/" target="blank">
+                <img class="img-fluid" src="./assests/static_layout.png" alt="KAST Website">
                 <div class="project-box-title">
                   <div class="project-box-content">
                     <div class="project-name">
-                      Superhero API
+                      Static Layout
                     </div>
                     <div class="project-description">
-                      A fun API powered by JavaScript where the user can enter a number of their choosing to find if they are a Hero or a Villian! 
+                      My first project was this Static Layout challenge to recreate an exisiting site without any help from Bootstrap.
                     </div>
                   </div>
                 </div>
               </a>
               </div>
           </div>
-    
+        <div class="container-fluid">
+          <div class="formspree">
+            <h1 id="contact">Contact Me</h1>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylybkz" method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Write me a message as to whatever you need and I will get back with you within 1 business day. Thank you for reaching out to me and I am excited to work with you!" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <input type="submit" value="Submit">
+            </form><style>/* reset */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm fieldset,
+            #fs-frm optgroup,
+            #fs-frm label,
+            #fs-frm #card-element:disabled {
+              font-family: inherit;
+              font-size: 100%;
+              color: inherit;
+              border: none;
+              border-radius: 0;
+              display: block;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+            }
+            #fs-frm label,
+            #fs-frm legend,
+            #fs-frm ::placeholder {
+              font-size: .825rem;
+              margin-bottom: .5rem;
+              padding-top: .2rem;
+              display: flex;
+              align-items: baseline;
+            }
+            
+            /* border, padding, margin, width */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm #card-element {
+              border: 1px solid rgba(0,0,0,0.2);
+              background-color: rgba(255,255,255,0.9);
+              padding: .75em 1rem;
+              margin-bottom: 1.5rem;
+            }
+            #fs-frm input:focus,
+            #fs-frm select:focus,
+            #fs-frm textarea:focus {
+              background-color: white;
+              outline-style: solid;
+              outline-width: thin;
+              outline-color: gray;
+              outline-offset: -1px;
+            }
+            #fs-frm [type="text"],
+            #fs-frm [type="email"] {
+              width: 100%;
+            }
+            #fs-frm [type="button"],
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+              width: auto;
+              cursor: pointer;
+              -webkit-appearance: button;
+              -moz-appearance: button;
+              appearance: button;
+            }
+            #fs-frm [type="button"]:focus,
+            #fs-frm [type="submit"]:focus,
+            #fs-frm [type="reset"]:focus {
+              outline: none;
+            }
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+              margin-bottom: 0;
+              text-align: center;
+            }
+            #fs-frm select {
+              text-transform: none;
+            }
+            
+            #fs-frm [type="checkbox"] {
+              -webkit-appearance: checkbox;
+              -moz-appearance: checkbox;
+              appearance: checkbox;
+              display: inline-block;
+              width: auto;
+              margin: 0 .5em 0 0 !important;
+            }
+            
+            #fs-frm [type="radio"] {
+              -webkit-appearance: radio;
+              -moz-appearance: radio;
+              appearance: radio;
+            }
+            
+            /* address, locale */
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+              display: inline;
+            }
+            #fs-frm fieldset.locale input[name="city"] {
+              width: 52%;
+            }
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+              width: 20%;
+            }
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"] {
+              margin-right: 3%;
+            }
+            </style>
+          </div>
+        </div>
+      <footer id="footer" class="footer gray-bg">
+        <div id="resume">
+            <h1 class="resume1"></h1>
+            <a target="_blank" href="https://github.com/ryanemccall">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/ryanmodrall/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+        </div>
+        <a target="_blank" href="./assests/Ryan Modrall_Resume.pdf" download="resume">
+          <button class="btn"><i class="fa fa-download"></i> Resume</button>
+        </a>
+        <p class="copyright">&#xa9 Ryan Modrall 2021</p>
+      </footer>
+          
    
 </body>
 </html>

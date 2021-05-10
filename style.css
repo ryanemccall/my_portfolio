@@ -1,7 +1,7 @@
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    background-color:#be4a2b;
+    background: cornsilk;
 }
 
 #nav{
@@ -43,25 +43,33 @@ body{
     min-width: 200px;
 }
 #card1{
-    background-color: #fbb261;
-    color: #424549;
+    background-color: #412e41;
+    color: #fff;
+    text-align: center;
 }
 #about-me{
     text-align: center;
     color: #fff;
     font-size: 30px;
-    font-style: italic;
+    text-transform: lowercase;
 }
 
 #card2{
-    background-color: #fbb261;
-    color: #424549;
+    background-color: #412e41;
+    color: #fff;
+    text-align: center;
 }
 #interest{
     text-align: center;
     color: #fff;
     font-size: 30px;
-    font-style: italic;
+    text-transform: lowercase;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
 }
 
 #healthcare{
@@ -71,8 +79,9 @@ body{
 }
 
 #card3{
-    background-color: #fbb261;
-    color: #424549; 
+    background-color: #412e41;
+    color: #fff; 
+    text-align: center;
 }
 
 #hobbies{
@@ -82,10 +91,15 @@ body{
     text-transform: lowercase;
 }
 
+#video{
+    margin-top: 8%;
+}
+
 #projects{
     font-size: 50px;
     text-align: center;
-    color: #fff;
+    color: #b76c24;
+    font-weight: 500;
     margin-bottom: 3%;
     text-transform: uppercase;
 }
@@ -121,6 +135,52 @@ body{
         .project-box:hover .project-box-title {
             opacity: 1; }
 .img-fluid{
-    width: 300px;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#contact{
+    font-size: 30px;
+    color: #b76c24;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3%;
+    text-transform: lowercase;
+}
+.formspree{
+    background: #fff;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
     height: auto;
+}
+
+#footer{
+    text-align: center;
+}
+
+#resume{
+    display: block;
+}
+
+svg{
+    margin-top: 5%;
+    margin-right: 5px;
+    width: auto;
+    height: 5vh;
+    align-items: center;
+}
+
+.btn{
+  background-color: royalblue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.btn:hover{
+    background-color: dodgerblue;
 }
