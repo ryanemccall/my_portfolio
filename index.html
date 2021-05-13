@@ -34,34 +34,49 @@
             <h1 id="name">Ryan Modrall</h1>
             <h2 id="title"> Jr Web Developer</h2>
            </div>
-           <div id="about" class="card-group">
-            <div id="card1" class="card">
-              <div class="card-body">
-                <h5 id="about-me" class="card-title">About Me</h5>
-                <p class="card-text">Hi, my name is Ryan Modrall, and I am Jr. Web Developer studying with Eleven Fifty Academy. I am also in pursuit of an Informatics degree through Ivy Tech where I will graduate this Fall. 
-
-                    I believe in work that makes a difference in people’s lives. Through my 7 years in the healthcare industry from claims to facility enrollment to provider enrollment, I have learned that work that changes lives comes in many forms. Web Development makes me feel like an artist who can use their skills to help users of my sites gain knowledge, have some fun, or whatever the task may be. 
-                    
-                     </p>
-                     <img id="barbershop" src="./assests/frontier.jpg" class="card-img-top" alt="barbershop shirt">
+           <br>
+           <div class="container-fluid">
+            <div id="card1" class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img id="barbershop" src="./assests/frontier.jpg" class="card-img-top" alt="barbershop shirt">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 id="about-me" class="card-title">About Me</h5>
+                    <p class="card-text">Hi, my name is Ryan Modrall, and I am Jr. Web Developer studying with Eleven Fifty Academy. I am also in pursuit of an Informatics degree through Ivy Tech where I will graduate this Fall. 
+    
+                        I believe in work that makes a difference in people’s lives. Through my 7 years in the healthcare industry from claims to facility enrollment to provider enrollment, I have learned that work that changes lives comes in many forms. Web Development makes me feel like an artist who can use their skills to help users of my sites gain knowledge, have some fun, or whatever the task may be. 
+                        
+                         </p>
+                </div>
               </div>
             </div>
-            <div id="card2" class="card">
-              <img id="healthcare" src="./assests/healthcare.jpg" class="card-img-top" alt="vaccine visit">
-              <div class="card-body">
-                <h5 id="interest" class="card-title">Interest and Background</h5>
-                <p class="card-text">The healthcare industry is in need of revamping in today’s technological world. An overhaul in not just industry standards but in user needs is necessary. With my healthcare industry background and coding experience I would love to create beautiful websites that are functional and helpful to users and patients who will use them regularly.</p>
+            <div id="card2" class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img id="healthcare" src="./assests/healthcare.jpg" class="card-img-top" alt="vaccine visit">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 id="interest" class="card-title">Interest and Background</h5>
+                        <p class="card-text">The healthcare industry is in need of revamping in today’s technological world. An overhaul in not just industry standards but in user needs is necessary. With my healthcare industry background and coding experience I would love to create beautiful websites that are functional and helpful to users and patients who will use them regularly.</p>
+                </div>
               </div>
             </div>
-            <div id="card3" class="card">
-              <div class="card-body">
-                <h5 id="hobbies" class="card-title">Hobbies</h5>
-                <p class="card-text">Outside of work I love to cook. I enjoy spending time with my wife and friends. I love to travel, and I am what is known as a barbershop quartet singer. I have been singing barbershop for 12 years now. So please enjoy a video of me performing at the Barbershop International Competition in Orlando, FL in 2018 with my quartet, The Simple Life!</p>
-                <br>
-                <iframe id="video" width="480" height="315" src="https://www.youtube.com/embed/-Uzc-OItA20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="card3" class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <iframe id="video" width="480" height="315" src="https://www.youtube.com/embed/-Uzc-OItA20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 id="hobbies" class="card-title">Hobbies</h5>
+                        <p class="card-text">Outside of work I love to cook. I enjoy spending time with my wife and friends. I love to travel, and I am what is known as a barbershop quartet singer. I have been singing barbershop for 12 years now. So please enjoy a video of me performing at the Barbershop International Competition in Orlando, FL in 2018 with my quartet, The Simple Life!</p>
+                </div>
               </div>
             </div>
-          </div>
+           </div>
           <br>
           <h1 id="projects">My Projects</h1>
           <div class="row gallery centerGallery no-gutters">
@@ -126,6 +141,9 @@
               </a>
               </div>
           </div>
+          <br>
+          <br>
+          <br>
         <div class="container-fluid">
           <div class="formspree">
             <h1 id="contact">Contact Me</h1>
@@ -155,8 +173,8 @@
               border-radius: 0;
               display: block;
               width: 100%;
-              padding: 0;
-              margin: 0;
+              padding: 2%;
+              margin-top: 3%;
               -webkit-appearance: none;
               -moz-appearance: none;
             }
@@ -176,7 +194,7 @@
             #fs-frm textarea,
             #fs-frm #card-element {
               border: 1px solid rgba(0,0,0,0.2);
-              background-color: rgba(255,255,255,0.9);
+              background-color:#fff;
               padding: .75em 1rem;
               margin-bottom: 1.5rem;
             }
@@ -191,11 +209,12 @@
             }
             #fs-frm [type="text"],
             #fs-frm [type="email"] {
-              width: 100%;
+              width: 85%;
             }
             #fs-frm [type="button"],
             #fs-frm [type="submit"],
             #fs-frm [type="reset"] {
+              margin: auto;
               width: auto;
               cursor: pointer;
               -webkit-appearance: button;
@@ -209,7 +228,7 @@
             }
             #fs-frm [type="submit"],
             #fs-frm [type="reset"] {
-              margin-bottom: 0;
+              margin-bottom: 2%;
               text-align: center;
             }
             #fs-frm select {

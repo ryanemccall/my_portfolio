@@ -1,7 +1,7 @@
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    background: cornsilk;
+    background: #412e41;
 }
 
 #nav{
@@ -41,6 +41,7 @@ body{
 #barbershop{
     min-height: 200px;
     min-width: 200px;
+    padding: 3%;
 }
 #card1{
     background-color: #412e41;
@@ -72,6 +73,10 @@ body{
     object-fit: cover;
 }
 
+.card-text{
+    line-height: 200%;
+}
+
 #healthcare{
     min-height: 200px;
     min-width: 200px;
@@ -98,7 +103,7 @@ body{
 #projects{
     font-size: 50px;
     text-align: center;
-    color: #b76c24;
+    color: #fff;
     font-weight: 500;
     margin-bottom: 3%;
     text-transform: uppercase;
@@ -142,7 +147,7 @@ body{
 
 #contact{
     font-size: 30px;
-    color: #b76c24;
+    color: #6F6E5F;
     font-weight: 500;
     text-align: center;
     margin-bottom: 3%;
@@ -150,9 +155,10 @@ body{
 }
 .formspree{
     background: #fff;
-    margin-top: 5%;
+    margin: auto;
+    justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -183,4 +189,8 @@ svg{
 }
 .btn:hover{
     background-color: dodgerblue;
+}
+
+.copyright{
+    color: #fff;
 }
